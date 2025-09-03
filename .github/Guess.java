@@ -14,12 +14,15 @@ public class Guess {
             guess = Integer.parseInt(scan.nextLine());
             if (guess < secretNum){
                 System.out.println("Your guess is too low.");
+                numGuesses += 1;
             } else if (guess > secretNum){
                 System.out.println("Your guess is too high.");
+                numGuesses += 1;
             } else {
                 System.out.println("You got it!!");
             }
         }
+        System.out.println("It took you " + numGuesses + " guesses.");
         scan.close();
     }
 }
