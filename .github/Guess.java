@@ -22,7 +22,7 @@ public class Guess {
                 System.out.println("You got it!!");
             }
         }
-        System.out.println("It took you " + numGuesses + " guesses.");
+        System.out.println("It took you " + (numGuesses + 1) + " guesses.");
         scan.close();
     }
 }
