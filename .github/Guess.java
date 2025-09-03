@@ -5,7 +5,7 @@ public class Guess {
         Random random = new Random();
         Scanner scan = new Scanner(System.in);
         int secretNum = random.nextInt(10) + 1;  // Generate secret number (options: 1-10)
-        int numGuesses = 0;
+        int numGuesses = 1;
         int guess = 0;
 
         // Give feedback on guess
@@ -22,7 +22,7 @@ public class Guess {
                 System.out.println("You got it!!");
             }
         }
-        System.out.println("It took you " + (numGuesses + 1) + " guesses.");
+        System.out.println("It took you " + numGuesses + " guesses.");
         scan.close();
     }
 }
