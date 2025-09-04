@@ -9,4 +9,9 @@ public class Grader {
         }
         scan.close();
     }
+
+    public int rounding(int grade) {
+        grade = 0;
+        return grade;
+    }
 }
